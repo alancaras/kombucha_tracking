@@ -6,6 +6,7 @@
 
 .back {
   background-color: whitesmoke;
+  margin-top: 3%;
 }
 
 .enter {
@@ -15,16 +16,45 @@
 }
 
 .tap {
-  align: center;
+  text-align: center;
   margin: auto;
 }
 
-h2,
+h2 {
+  text-align: center;
+}
+
 h3 {
   text-align: center;
 }
 
 .enter-here {
-  width: 90% !important;
+  width: 50% !important;
   margin: auto;
 }
+
+/* 
+@media (max-width: 480px) {
+  body {
+    background: #f95e8a;
+  }
+
+  .input-group-addon,
+  .input-group-btn,
+  .input-group,
+  .form-control,
+  .input-group,
+  .mb-3,
+  .enter-here,
+  .input-group-prepend,
+  .input-group-text {
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+  }
+
+  .input-group {
+    display: block;
+  }
+}
+*/

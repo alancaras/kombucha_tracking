@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="javascript/grocerylist.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body class="back">
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">New Batch</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="log.html">Log Current Batch</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="juice.html">Add Juice Stage</a>
+    </li>
+  </ul>
+
+  <br>
+
+
+  <div class="container-fluid">
+    <H2 style="color: #29292b;">Log Current Batch</H2>
+    <br>
+
+    <p style="color: #29292b; text-align: center;">A current batch is brewing in one of the following stages:
+      <ul style="color: #29292b; text-align: center; list-style-position: inside;">
+        <li>First Ferment (Brewing in a Tank)</li>
+        <li>Second Ferment I (Brewing in a Tank after juice/sugar has been added)</li>
+        <li>Second Ferment II (Brewing in a sealed bottle after juice/sugar has been added)</li>
+      </ul>
+    </p>
+    <br>
+    <h3 style="color: #475fe8;">Log the current statistics of the batch:</h3>
+    <br>
+
+
+    <!--      Dropdown select Batch No.    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle input-group-text" id="inputGroup-sizing-lg"
+          type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Batch No.</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+
+    <!--      Dropdown select Tank or Bottle    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle input-group-text" id="inputGroup-sizing-lg"
+          type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tank or Bottle?</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tank</a>
+          <a class="dropdown-item" href="#">Bottle</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--      Dropdown select Ferment Point (Start Mid End)    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle input-group-text" id="inputGroup-sizing-lg"
+          type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ferment Point (Start Mid or
+          End)?</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Start</a>
+          <a class="dropdown-item" href="#">Middle</a>
+          <a class="dropdown-item" href="#">End</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button"
+        aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--   Input box for Liquid Temperature (C) -->
+
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Liquid Temperature (C):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+
+    <!--    Input box for    External Temperature    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg"> External Temperature (C):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for PH Level    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">PH Level:</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+
+
+
+    <!--    Input box for     Alcohol by Volume
+    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg"> Alcohol by Volume (%) :</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+
+
+    <!--    Input box for Turbidity -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Turbidity:</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for Sugar -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Sugar (g/L):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for CO2 -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">CO2 Level:</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for Comments -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Comments</span>
+      </div>
+      <textarea class="form-control" id="basic-url" aria-label="With textarea"
+        aria-describedby="inputGroup-sizing-lg"></textarea>
+    </div>
+
+
+    <br>
+
+    <!--    Enter user passcode    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Enter Your User Code:</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--      Submit Button  -->
+
+    <div class="tap">
+      <button type="button" class="btn btn-primary btn-lg" style="background-color: #475fe8;" disabled
+        onclick="submit()" value="Submit">Submit</button>
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

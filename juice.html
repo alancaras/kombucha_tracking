@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="javascript/grocerylist.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body class="back">
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">New Batch</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="log.html">Log Current Batch</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="juice.html">Add Juice Stage</a>
+        </li>
+    </ul>
+
+    <br>
+
+
+    <div class="container-fluid">
+
+        <H2 style="color: #29292b;">Juice Stage (Second Fermentation)</H2>
+
+        <br>
+
+        <p style="color: #29292b; text-align: center;">The first fermentation is compelete. <br>You are transferring the
+            kombucha into one or multiple new vessels (sub-batches).<br>And you are adding juice (or dosage) to each new
+            sub-batch.
+        </p>
+        <br>
+        <h3 style="color: #475fe8;">Enter the juice and kombucha amounts that<br>you are adding into a
+            new sub-batch:</h3>
+        <br>
+
+
+        <!--      Input box for Kombucha (L)    -->
+        <div class="input-group mb-3 enter-here input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Kombucha (Lt):</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-label="Large"
+                aria-describedby="inputGroup-sizing-lg">
+        </div>
+
+        <!--      Dropdown select Juice Type/Name added    -->
+
+        <div class="input-group mb-3 enter-here input-group-lg">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary dropdown-toggle input-group-text" id="inputGroup-sizing-lg"
+                    type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Juice Name</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                aria-describedby="inputGroup-sizing-lg">
+        </div>
+
+
+        <!--   Input box for Juice QTY added -->
+
+        <div class="input-group mb-3 enter-here input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Juice Amount Added (Lt):</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-label="Large"
+                aria-describedby="inputGroup-sizing-lg">
+        </div>
+
+
+
+        <br>
+
+        <!--    Enter user passcode    -->
+
+        <div class="input-group mb-3 enter-here input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Enter Your User Code:</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-label="Large"
+                aria-describedby="inputGroup-sizing-lg">
+        </div>
+
+        <!--      Submit Button  -->
+
+        <div class="tap">
+            <button type="button" class="btn btn-primary btn-lg" style="background-color: #475fe8;" disabled
+                onclick="submit()" value="Submit">Submit</button>
+        </div>
+
+        <br>
+        <br>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

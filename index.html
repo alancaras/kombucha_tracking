@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="javascript/grocerylist.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body class="back">
-    <div class="container">
-      <H2>Create a New Batch</H2>
-      <h3>Enter Ingredients:</h3>
- 
-    <!--
-      Input box for water.
-    -->
-    <div  class="input-group mb-3 enter-here">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="javascript/grocerylist.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body class="back">
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">New Batch</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="log.html">Log Current Batch</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="juice.html">Add Juice Stage</a>
+    </li>
+  </ul>
+
+  <br>
+
+
+  <div class="container-fluid">
+    <H2 style="color: #29292b;">Create a New Batch</H2>
+
+    <br>
+
+    <p style="color: #29292b; text-align: center;">You are starting a new batch (first ferment).
+    </p>
+    <br>
+    <h3 style="color: #475fe8;">Enter the ingredients you are adding into the brewing
+      vessel:</h3>
+    <br>
+
+    <!--      Input box for water    -->
+    <div class="input-group mb-3 enter-here input-group-lg">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">Water (Litres):</span>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Water (Lt):</span>
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-    </div>  
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
 
-        <!--
-      Input box for Sugar.
-    -->
 
-    <div  class="input-group mb-3 enter-here">
+    <!--   Input box for Sugar -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">Sugar (Kilograms):</span>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Sugar (Kg):</span>
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-    </div>  
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
 
-      <input type="button" class="tap" onclick="addItem()" value="Add Item" />
-      <Ul id="grocerylist">
- 
-      </Ul>
-      <div>
+
+    <!--    Input box for Black Tea    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Black Tea (Kg):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for Green Tea    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Green Tea (Kg):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for Scoby Amount    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Scoby (Kg):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--    Input box for Starter Amount    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Starter Liquid (Lt):</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <br>
+
+    <!--    Enter user passcode    -->
+
+    <div class="input-group mb-3 enter-here input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Enter Your User Code:</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <!--      Submit Button  -->
+
+    <div class="tap">
+      <button type="button" class="btn btn-primary btn-lg" style="background-color: #475fe8;" disabled
+        onclick="submit()" value="Submit">Submit</button>
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
