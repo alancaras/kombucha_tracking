@@ -1,0 +1,30 @@
+#box {
+  width: 50%;
+  margin: auto;
+  background-color: bisque;
+}
+
+.back {
+  background-color: whitesmoke;
+}
+
+.enter {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tap {
+  align: center;
+  margin: auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.enter-here {
+  width: 90% !important;
+  margin: auto;
+}
