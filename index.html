@@ -6,6 +6,9 @@
   <script src="javascript/grocerylist.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 </head>
 
 <body class="back">
@@ -37,78 +40,84 @@
       vessel:</h3>
     <br>
 
-    <!--      Input box for water    -->
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Water (Lt):</span>
+    <form action="">
+
+      <!--      Input box for water    -->
+      <label>Water (Lt):</label>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <input type="number" name="water" placeholder="enter here" min="10" max="3999" class="form-control"
+          id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg" required>
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-
-    <!--   Input box for Sugar -->
-
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Sugar (Kg):</span>
+      <!--   Input box for Sugar -->
+      <Label>Sugar (Kg):</label>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
 
-    <!--    Input box for Black Tea    -->
+      <!--    Input box for Black Tea    -->
 
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Black Tea (Kg):</span>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Black Tea (Kg):</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-    <!--    Input box for Green Tea    -->
+      <!--    Input box for Green Tea    -->
 
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Green Tea (Kg):</span>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Green Tea (Kg):</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-    <!--    Input box for Scoby Amount    -->
+      <!--    Input box for Scoby Amount    -->
 
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Scoby (Kg):</span>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Scoby (Kg):</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-    <!--    Input box for Starter Amount    -->
+      <!--    Input box for Starter Amount    -->
 
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Starter Liquid (Lt):</span>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Starter Liquid (Lt):</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-    <br>
+      <br>
 
-    <!--    Enter user passcode    -->
+      <!--    Enter user passcode    -->
 
-    <div class="input-group mb-3 enter-here input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Enter Your User Code:</span>
+      <div class="input-group mb-3 enter-here input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Enter Your User Code:</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-label="Large"
+          aria-describedby="inputGroup-sizing-lg">
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
-    </div>
 
-    <!--      Submit Button  -->
+      <!--      Submit Button  -->
 
-    <div class="tap">
-      <button type="button" class="btn btn-primary btn-lg" style="background-color: #475fe8;" disabled
-        onclick="submit()" value="Submit">Submit</button>
-    </div>
+      <div class="tap">
+        <input type="submit" class="btn btn-primary btn-lg" style="background-color: #475fe8;" onclick="submit()"
+          value="Submit">
+      </div>
+
+    </form>
+
 
     <br>
     <br>
